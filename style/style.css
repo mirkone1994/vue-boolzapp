@@ -2,3 +2,22 @@ body {
     height: 100vh;
     background: linear-gradient(to bottom, #009688 0%,#009688 20%,#D9DBD4 20%,#D9DBD4 100%);
 }
+#chat {
+    height: 95%;
+    background: #EAEAEA;
+}
+#user {
+    height: 100px;
+}
+#notification {
+    height: 100px;
+    background-color: #8EDAFC;
+}
+#search {
+    background-color: #fafafa;
+    height: 50px;
+}
+#message {
+    height: 100px;
+    background-color: #e9ebeb;
+}
