@@ -30,7 +30,9 @@ body {
 }
 #sent {
     height: 100px;
+    background-color: #d5f9ba;
 }
 #recived {
     height: 100px;
+    background-color: #ffffff;
 }
