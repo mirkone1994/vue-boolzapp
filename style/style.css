@@ -3,7 +3,6 @@ body {
     background: linear-gradient(to bottom, #009688 0%,#009688 20%,#D9DBD4 20%,#D9DBD4 100%);
 }
 #chat {
-    height: 95%;
     background: #EAEAEA;
 }
 #user {
@@ -20,4 +19,18 @@ body {
 #message {
     height: 100px;
     background-color: #e9ebeb;
+}
+#field {
+    height: calc(100vh - 250px);
+    background-image:url(../img/mine.jpg);
+}
+#sendmsg {
+    height: 100px;
+    background-color: #f3eeea;
+}
+#sent {
+    height: 100px;
+}
+#recived {
+    height: 100px;
 }
