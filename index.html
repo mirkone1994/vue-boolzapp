@@ -23,6 +23,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="js/data.js"></script>
   </head>
   <body>
     <div
@@ -42,9 +43,9 @@
             >
               <div class="media">
                 <figure>
-                  <img src="img/avatar_io.jpg" alt="Silvia Rivella" />
+                  <img :src="img/avatar_io.jpg" alt="Silvia Rivella" />
                 </figure>
-                <div class="h6 media-text">Silvia Rivella</div>
+                <div class="h6 media-text">{{ user.name }}</div>
               </div>
               <div
                 class="
