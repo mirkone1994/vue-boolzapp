@@ -9,6 +9,7 @@ const app = new Vue({
       name: 'Nome Utente',
       avatar: '_io',
     },
+    contacts,
   },
   methods: {},
 });

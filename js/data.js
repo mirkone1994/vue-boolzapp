@@ -1,9 +1,8 @@
-const data = {
-  user: {
+const user = {
     name: 'Nome Utente',
     avatar: '_io',
-  },
-  contacts: [
+};
+const contacts = [
     {
       name: 'Michele',
       avatar: '_1',
@@ -87,5 +86,4 @@ const data = {
         },
       ],
     },
-  ],
-};
+]
