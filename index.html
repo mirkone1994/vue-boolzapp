@@ -43,7 +43,7 @@
             >
               <div class="media">
                 <figure>
-                  <img :src="`img/avatar${user.avatar}.jpg`" alt="user.name" />
+                  <img :src="`img/avatar${user.avatar}.jpg`" :alt="user.name" />
                 </figure>
                 <div class="h6 media-text">{{ user.name }}</div>
               </div>
@@ -89,10 +89,10 @@
               <ul class="m-0 p-0">
                 <li class="media" v-for="contact in contacts">
                   <figure>
-                    <img :src="`img/avatar${contact.avatar}.jpg`" alt="Marco Lanci" />
+                    <img :src="`img/avatar${contact.avatar}.jpg`" :alt="contact.name" />
                   </figure>
                   <div class="h6 media-text">
-                    <div>Marco Lanci</div>
+                    <div>{{contact.name}}</div>
                   </div>
                 </li>
               </ul>
