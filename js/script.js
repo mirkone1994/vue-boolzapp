@@ -30,6 +30,15 @@ const app = new Vue({
         date: dayjs().format("DD/MM/YYYY HH:mm:ss"),
       };
       this.contacts[this.currentContact].messages.push(newMessage);
+      this.newMessage = "";
+      setTimeout(() => {
+        const answerMessage = {
+          status: "received",
+          message: "ok",
+          date: dayjs().format("DD/MM/YYYY HH:mm:ss"),
+        };
+        this.contacts[this.currentContact].messages.push(answerMessage);
+      }, 1000);
     }
   },
 });
