@@ -5,6 +5,7 @@ Vue.config.devtools = true;
 const app = new Vue({
   el: '#app',
   data: {
+    newMessage: "",
     currentContact: 0,
     user: {
       name: 'Maddalena',
