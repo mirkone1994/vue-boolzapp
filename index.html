@@ -23,6 +23,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.10.6/dayjs.min.js"></script>
     <script src="js/data.js"></script>
   </head>
   <body>
@@ -154,7 +155,8 @@
                     type="text"
                     class="form-control"
                     placeholder="Scrivi un messaggio"
-                    v-model="newMessage"
+                    v-model.trim="newMessage"
+                    @keyup.enter="sendMessage"
                   />
                 </div>
                 <div class="col-1">

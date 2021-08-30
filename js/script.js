@@ -22,5 +22,14 @@ const app = new Vue({
       const lastMessage = messages[messages.length - 1];
       return lastMessage.date;
     },
+    sendMessage(){
+      if (!this.newMessage) return;
+      const newMessage = {
+        status: "sent",
+        message: this.newMessage,
+        date: dayjs().format("DD/MM/YYYY HH:mm:ss"),
+      };
+      this.contacts[this.currentContact].messages.push(newMessage);
+    }
   },
 });
