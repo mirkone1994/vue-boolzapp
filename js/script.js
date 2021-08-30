@@ -5,11 +5,21 @@ Vue.config.devtools = true;
 const app = new Vue({
   el: '#app',
   data: {
+    currentContact: 0,
     user: {
-      name: 'Nome Utente',
+      name: 'Maddalena',
       avatar: '_io',
     },
     contacts,
   },
-  methods: {},
+  methods: {
+    setCurrentContact(index){
+      this.currentContact=index;
+    },
+    getLastSeen(){
+      const messages = this.contacts[this.currentContact].messages;
+      const lastMessage = messages[messages.length - 1];
+      return lastMessage.date;
+    },
+  },
 });

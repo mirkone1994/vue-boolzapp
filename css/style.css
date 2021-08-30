@@ -26,6 +26,9 @@
   display: flex;
   align-items: center;
 }
+media.active {
+  background-color: grey;
+}
 
 .media figure {
   height: 70px;
